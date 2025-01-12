@@ -13,7 +13,11 @@
 
 
     %Calcul de rho :
-    rho = -(((zi-45)/sin(theta2)) + d);
+    if theta2 == 0
+        rho = r*cos(a)-50;
+    else 
+        rho = -(((zi-45)/sin(theta2)) + d);
+    end
 
 end
 
