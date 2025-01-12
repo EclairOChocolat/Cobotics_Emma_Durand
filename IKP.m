@@ -1,5 +1,5 @@
  function [theta1, theta2, rho] = IKP(xi, yi, zi)
-     l = 20;
+    l = 20;
     d = 50;
     h = 45 ;
     %Calcul de theta1 :
@@ -13,9 +13,7 @@
 
 
     %Calcul de rho :
-    r2 = sqrt(xi^2 + yi^2+zi^2);
-    %rho = 
-    rho = sqrt((r2 - l)^2 + (zi - h)^2) - d;
+    rho = -(((zi-45)/sin(theta2)) + d);
 
 end
 
